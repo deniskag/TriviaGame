@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<h1> Totally Trivial Trivia! </h1>
+		</div>
+	</header>
+	<div id="container" class="container center">
+		<div class="center start">
+			<h2>
+				<button type="button" id="start">Start</button>
+			</h2>
+		</div>
+		<div class="section">
+			
+			<div class="center">Time Remaining: <label id="time">30</label> Seconds</div>
+			<div id="show-number"></div>
+			<p class="question">What the first full length CGI movie?</p>
+			<input type="radio" name="q1" id="q1a"><label for="q1a">A Bug's Life</label>
+			<input type="radio" name="q1" id="q1b"><label for="q1b">Monsters Inc.</label>
+			<input type="radio" name="q1" id="q1c"><label for="q1c">Toy Story</label>
+			<input type="radio" name="q1" id="q1d"><label for="q1d">The Lion King</label>
+
+			<p class="question">Whiche of thesr is NOT a name of one of the Spice Girs?</p>
+			<input type="radio" name="q2" id="q2a"><label for="q2a">Sporty Spice</label>
+			<input type="radio" name="q2" id="q2b"><label for="q2b">Fred Spice</label>
+			<input type="radio" name="q2" id="q2c"><label for="q2c">Scary Spice</label>
+			<input type="radio" name="q2" id="q2d"><label for="q2d">Posh Spice</label>
+			
+			<p class="question">Which NBA team won the mosttitles in the 90s?</p>
+			<input type="radio" name="q3" id="q3a"><label for="q3a">New York Knicks</label>
+			<input type="radio" name="q3" id="q3b"><label for="q3b">Portland Trailblazers</label>
+			<input type="radio" name="q3" id="q3c"><label for="q3c">Los Angeles Lokers</label>
+			<input type="radio" name="q3" id="q3d"><label for="q3d">Chicago Bulls</label>
+			
+			<p class="question">Which group relesed the hit song,"Smells Like Teen Spirit"?</p>
+			<input type="radio" name="q4" id="q4a"><label for="q4a">Nirvana</label>
+			<input type="radio" name="q4" id="q4b"><label for="q4b">Backstreet Boys</label>
+			<input type="radio" name="q4" id="q4c"><label for="q4c">The Offspring</label>
+			<input type="radio" name="q4" id="q4d"><label for="q4d">No Doube</label>
+			
+			<p class="question">Which popular Disney movie  featured the song, "Circle of Life"? </p>
+			<input type="radio" name="q5" id="q5a"><label for="q5a">Aladin</label>
+			<input type="radio" name="q5" id="q5b"><label for="q5b">Hercules</label>
+			<input type="radio" name="q5" id="q5c"><label for="q5c">Mulan</label>
+			<input type="radio" name="q5" id="q5d"><label for="q5d">The Lion King</label>
+			
+			<p class="question">Finish this line from the Fresh Prince of Bel-Air theme song; "I whistled for a cab and when it came near,the license plate said..."</p>
+			<input type="radio" name="q6" id="q6a"><label for="q6a">Dice</label>
+			<input type="radio" name="q6" id="q6b"><label for="q6b">Mirror</label>
+			<input type="radio" name="q6" id="q6c"><label for="q6c">Fresh</label>
+			<input type="radio" name="q6" id="q6d"><label for="q6d">Caby</label>
+			
+			<p class="question">What was the name of the principal at Bayside High in Saved By The Bell?</p>
+			<input type="radio" name="q7" id="q7a"><label for="q7a">Mr.Zhou</label>
+			<input type="radio" name="q7" id="q7b"><label for="q7b">Mr.Driggers</label>
+			<input type="radio" name="q7" id="q7c"><label for="q7c">Mr.Belding</label>
+			<input type="radio" name="q7" id="q7d"><label for="q7d">Mr.Page</label>
+			
+			<div class="center ">
+				<button type="button" id="done">Done</button>
+			</div>
+			
+		</div>
+		<div class="center" id="totals" style="display: none;">
+			<h2> All Done!</h2>
+			<div>Correct Answers: <label id="correct"></label></div>
+			<div>Incorrect Answers: <label id="incorrect"></label></div>
+			<div>Unanswered: <label id="unanswered"><</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
